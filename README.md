@@ -5,6 +5,17 @@ A Spring Boot application that solves the Bajaj Health coding challenge by imple
 2. Solves SQL problems based on registration number
 3. Submits solutions using JWT tokens
 
+## 🚀 Quick Start
+
+### Download & Run
+**Direct JAR Download**: [bajaj-health-service-1.0.0.jar](https://drive.google.com/file/d/1lELmy-WMDkmKsgUD5FMOk_EqS0RkYyey/view?usp=sharing)
+
+```bash
+# Download the JAR file from the link above
+# Then run:
+java -jar bajaj-health-service-1.0.0.jar
+```
+
 ## Requirements Met
 
 ✅ **RestTemplate and WebClient**: Uses both as required  
@@ -32,6 +43,23 @@ bajajQstn/
 │   │       └── application.properties        # Application configuration
 ├── pom.xml                                   # Maven dependencies
 └── README.md                                 # This file
+```
+
+## Download Options
+
+### 📦 Pre-built JAR File
+**Direct Download**: [bajaj-health-service-1.0.0.jar](https://drive.google.com/file/d/1lELmy-WMDkmKsgUD5FMOk_EqS0RkYyey/view?usp=sharing)
+
+### 🔨 Build from Source
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/bajajQstn.git
+cd bajajQstn
+
+# Build the application
+mvn clean package
+
+# The JAR will be created at: target/bajaj-health-service-1.0.0.jar
 ```
 
 ## How It Works
@@ -78,20 +106,22 @@ LIMIT 1
 
 ### Prerequisites
 - Java 17 or higher
-- Maven 3.6 or higher
+- Maven 3.6 or higher (only if building from source)
 
-### Build the Application
+### Option 1: Run Pre-built JAR (Recommended)
+```bash
+# Download the JAR from: https://drive.google.com/file/d/1lELmy-WMDkmKsgUD5FMOk_EqS0RkYyey/view?usp=sharing
+java -jar bajaj-health-service-1.0.0.jar
+```
+
+### Option 2: Build and Run from Source
 ```bash
 cd bajajQstn
 mvn clean package
-```
-
-### Run the Application
-```bash
 java -jar target/bajaj-health-service-1.0.0.jar
 ```
 
-Or using Maven:
+### Option 3: Run with Maven
 ```bash
 mvn spring-boot:run
 ```
@@ -114,6 +144,12 @@ The application can be configured via `application.properties`:
 - Spring Boot Starter WebFlux
 - JJWT (JSON Web Token library)
 - Spring Boot Starter Test (for testing)
+
+## Submission Details
+
+### 📋 For Bajaj Finserv Submission Form
+- **GitHub Repository**: `https://github.com/yourusername/bajajQstn.git`
+- **Public JAR Download Link**: `https://drive.google.com/file/d/1lELmy-WMDkmKsgUD5FMOk_EqS0RkYyey/view?usp=sharing`
 
 ## Notes
 
@@ -197,3 +233,7 @@ src/test/java/com/bajaj/
 - Ensure internet connectivity for external API calls
 - Verify Java 17+ is installed and available
 - Check Maven is properly configured
+
+## 🎯 Submission Ready
+
+This project is ready for submission to the Bajaj Finserv Health assessment. The JAR file is publicly accessible and the application meets all requirements specified in the problem statement.
